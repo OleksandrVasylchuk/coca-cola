@@ -1,0 +1,181 @@
+.section__first {
+  padding-top: 131px;
+  min-width: 450px;
+  height: 716px;
+  color: var(--primary-white-color);
+  background-image: url(../../img/Snow.webp);
+  background-color: #141429;
+}
+.first-text__title {
+  margin-bottom: 13px;
+  font-size: 52px;
+  line-height: 60px;
+}
+.first-text__subtitle {
+  font-size: 28px;
+  line-height: 32px;
+}
+.first-text__button {
+  display: block;
+  margin: 43px auto 77px auto;
+  width: 186px;
+  height: 44px;
+  border: 2px solid var(--primary-white-color);
+  background-color: transparent;
+  border-radius: 20px 20px 20px 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--primary-white-color);
+  &:hover,
+  &:focus {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+  }
+}
+.section__first-cloud {
+  display: none;
+}
+
+.section__first-img {
+  margin-left: -27px;
+  height: 316px;
+  width: 450px;
+  background-image: url(../../img/dedcoca-mob.webp);
+}
+
+@media screen and (min-width: 1440px) {
+  .section__first {
+    display: flex;
+    padding: 0;
+
+    padding-top: 180px;
+    padding-top: 131px;
+    min-width: 1440px;
+    height: 100vh;
+    color: var(--primary-white-color);
+    background-image: url(../../img/Snow.webp);
+    //   transform: rotate(90.51deg);
+    .pp-tableCell {
+      display: flex;
+      align-items: end;
+    }
+  }
+  .section__first-text {
+    margin-left: 148px;
+    display: block;
+    height: 574px;
+  }
+  .section__first-img {
+    position: relative;
+    margin-left: -27px;
+    width: 883px;
+    height: 574px;
+    background-image: url(../../img/dedcoca.webp);
+  }
+
+  .first-text__title {
+    margin-bottom: 20px;
+    font-size: 72px;
+    line-height: 83px;
+  }
+  .first-text__subtitle {
+    font-size: 38px;
+    line-height: 44px;
+  }
+  .first-text__button {
+    display: block;
+    margin: 27px 0 0 0;
+    width: 186px;
+    height: 44px;
+    border: 2px solid var(--primary-white-color);
+    background-color: transparent;
+    border-radius: 20px 20px 20px 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--primary-white-color);
+    &:hover,
+    &:focus {
+      background-color: var(--primary-white-color);
+      color: var(--primary-text-color);
+    }
+  }
+  .section__first-cloud {
+    display: flex;
+    box-sizing: border-box;
+    position: absolute;
+    left: 110px;
+    bottom: 252px;
+    // padding-top: 53px;
+    opacity: 0;
+    width: 222.97px;
+    height: 166.11px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--primary-white-color);
+    box-shadow: 4px 5px 15px rgba(255, 255, 255, 0.25);
+    transform: rotate(-0.15deg);
+
+    &:after {
+      content: "";
+      position: absolute;
+      // top: 60px;
+      // right: -60px;
+      // transform: rotate(-10deg);
+      top: 10px;
+      right: -45px;
+      transform: rotate(-28deg);
+      border: 18px solid transparent;
+      // box-shadow: 4px 5px 15px rgba(255, 255, 255, 0.25);
+      border-left: 65px solid rgb(255, 255, 255);
+      display: block;
+      width: 0;
+      height: 0;
+      filter: blur(2px);
+    }
+    .first-cloud__text {
+      font-size: 18px;
+      line-height: 21px;
+      color: var(--primary-text-color);
+      backdrop-filter: none;
+    }
+    &.active {
+      animation: active 1s;
+      transition: cubic-bezier(0.42, 0, 1, 1);
+      animation-delay: 3s;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+@keyframes active {
+  0% {
+    opacity: 0.25;
+    -webkit-transform: scale(0.25, 0.25);
+    transform: scale(0.25, 0.25);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+// .first-cloud__triangle {
+//   position: absolute;
+//   top: 60px;
+//   right: 0px;
+//   width: 0;
+//   height: 0;
+//   border-top: 20px solid transparent;
+//   border-left: 65px solid #ffffff;
+//   border-bottom: 20px solid transparent;
+//   box-shadow: 4px 5px 15px rgba(255, 255, 255, 0.25);
+//   transform: rotate(58.28deg);
+//   filter: blur(4px);
+// }

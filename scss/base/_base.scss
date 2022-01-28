@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Risque", cursive;
+  font-style: normal;
+  font-weight: normal;
+  color: var(--primary-white-color);
+  background-color: var(--background-color);
+  overflow: scroll;
+  overflow-y: visible;
+  height: 100%;
+}
+section {
+  z-index: 0;
+  transform: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

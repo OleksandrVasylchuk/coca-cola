@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca-cola</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/dedcoca 2.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Risque&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/jquery.pagepiling.min.css" />
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+<body>
+    <header>
+        <nav class="nav">
+            <img src="./img/Coca-Cola_logo_white 1.webp" alt="logo" class="logo">
+            <ul class="nav__item">
+                <li class="nav__list"><a href="#">Main</a></li>
+                <li class="nav__list"><a href="#">About</a></li>
+                <li class="nav__list"><a href="#">Products</a></li>
+                <li class="nav__list"><a href="#">Contacts</a></li>
+            </ul>
+            <div class="nav__burger-menu">
+                <div class="burger-menu_button">
+                    <span class="burger-menu_lines"></span>
+                    <div class="burger-menu_nav">
+                        <ul >
+                            <li class="burger-menu_link"><a href="#">Main</a></li>
+                            <li class="burger-menu_link"><a href="#">About</a></li>
+                            <li class="burger-menu_link"><a href="#">Products</a></li>
+                            <li class="burger-menu_link"><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="pagepiling">
+        <section class="section container section__first">
+        
+            <div class="section__first-text">
+                <p class="first-text__title">Main Site Title</p>
+                <p class="first-text__subtitle">Lorem ipsum descripsum</p>
+                <button class="first-text__button">Call to action</button>
+            </div>
+            
+                <div class="section__first-img">
+                    <div id="cloud" class="section__first-cloud">
+                        <p class="first-cloud__text">How how how !!! <br>
+                            Like it? <br>
+                            Scroll down for more !</p>
+                            <!-- <div class="first-cloud__triangle"></div> -->
+                    </div>
+                    
+                </div>
+        </section>
+        <section class="section container section__second">
+            <div class="section__second-text">
+                <p class="second-text__title">At least somewhere you can feel new year atmosphere</p>
+                <p class="second-text__subtitle">Choose your present:</p>
+                <div class="section__second-picture">
+                    <div class="section__second-circle"><img src="./img/new-year-sock.webp" alt="new year sock" class="second-circle__img"></div>
+                    <div class="section__second-circle white-color center"><img src="./img/caps.webp" alt="caps" class="second-circle__img"></div>
+                    <div class="section__second-circle white-color"><img src="./img/new-year-bag.webp" alt="new year bag" class="second-circle__img"></div>
+                </div>
+            </div>
+            <div class="section__second-box">
+                <img src="./img/new-year-sock.webp" alt="new year sock" class="second-box__img">
+                <div>
+                    <p class="second-box__title">Best sock ever</p>
+                    <p class="second-box__subtitle">Reuglar sock have no present inside <br> Lorem Ipsum is simply dumm y text of the printing and types etting industry. Lorem </p>
+                </div>
+            </div>
+        </section>
+        <section class="section container section__last">
+            <div class="section__last-box">
+                <p class="last-box__title">Write us <br> 
+                    for real presents</p>
+                <form action=""  method="post">
+                    <input class="last-box__input" type="text" name="name" id="name" placeholder="Name">
+                    <input class="last-box__input" type="tel" name="phone" id="phone"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone" required>
+                    <select class="last-box__input select" id="Gender" name="Gender" required>
+                        <option class="last-box__input" value="Gender">Gender</option>
+                        <option class="last-box__input" value="Boy">Boy</option>
+                        <option class="last-box__input" value="Girl">Girl</option>
+                    </select>
+                    <input class="last-box__input" type="email" id="email"multiple size="30" placeholder="Email" required>
+                    <textarea class="last-box__input coment" name="comments" placeholder="Your witsh"></textarea>
+                    <p class="last-box__cheskbox">
+                        <input id='one' type='checkbox' />
+                        <label for='one'>
+                            <span></span>
+                            Whant Coca-cola with present ?
+                        </label>
+                        <label>
+                            <span></span>
+                            <input type="checkbox" class="option-input checkbox" checked />
+                            Whant Coca-cola with present ?
+                          </label>
+                </form>
+            </div>
+        </section>
+        <div class="preloader">
+            <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path fill="currentColor"
+                d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+                </path>
+            </svg>
+        </div>
+    </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.pagepiling.min.js"></script>
+    <script src="./index.js"></script>
+    <script>
+    function burgerMenu(selector) {
+        let menu = $(selector);
+        let button = menu.find('.burger-menu_button', '.burger-menu_lines');
+        let links = menu.find('.burger-menu_link');
+        let overlay = menu.find('.burger-menu_overlay');
+        
+        button.on('click', (e) => {
+            e.preventDefault();
+            toggleMenu();
+        });
+        
+        links.on('click', () => toggleMenu());
+        overlay.on('click', () => toggleMenu());
+        
+        function toggleMenu(){
+            menu.toggleClass('burger-menu_active');
+            
+            if (menu.hasClass('burger-menu_active')) {
+            $('body').css('overlow', 'hidden');
+            } else {
+            $('body').css('overlow', 'visible');
+            }
+        }
+    }
+
+        burgerMenu('.nav__burger-menu');
+    </script>
+    <script>
+        if (matchMedia('only screen and (min-width: 1000px)').matches) {
+        $(document).ready(function() {
+            
+        if(window.screen.width>=1024){
+            $('#pagepiling').pagepiling({
+	    menu: null,
+        direction: 'vertical',
+        verticalCentered: true,
+        sectionsColor: [],
+        anchors: [],
+        scrollingSpeed: 700,
+        easing: 'swing',
+        loopBottom: false,
+        loopTop: false,
+        css3: true,
+        navigation: {
+            'textColor': '#000',
+            'bulletsColor': '#000',
+            'position': 'right',
+            'tooltips': ['section1', 'section2', 'section3', 'section4']
+        },
+       	normalScrollElements: null,
+        normalScrollElementTouchThreshold: 5,
+        touchSensitivity: 5,
+        keyboardScrolling: true,
+        sectionSelector: '.section',
+        animateAnchor: false,
+
+    
+	});
+}
+
+});
+}
+    </script>
+</body>
+</html>
