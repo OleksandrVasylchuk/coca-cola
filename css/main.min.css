@@ -12,9 +12,17 @@ body {
   height: 100%;
 }
 
-section {
-  z-index: 0;
-  transform: none;
+@media screen and (min-width: 1024px) {
+  .fp-tableCell {
+    align-items: end;
+    display: flex;
+  }
+}
+
+.fp-responsive .fp-section,
+.fp-responsive .fp-slide,
+.fp-responsive .fp-tableCell {
+  height: auto !important;
 }
 
 a {

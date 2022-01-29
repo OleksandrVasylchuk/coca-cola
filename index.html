@@ -10,10 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Risque&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/jquery.pagepiling.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/fullpage.css" />
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.min.css">
-<body>
-    <header>
+<body class="fp-responsive">
+    <header #header>
         <nav class="nav">
             <img src="./img/Coca-Cola_logo_white 1.webp" alt="logo" class="logo">
             <ul class="nav__item">
@@ -37,8 +38,8 @@
             </div>
         </nav>
     </header>
-    <div id="pagepiling">
-        <section class="section container section__first">
+    <div id="fullpage">
+        <section id="" class="section container section__first">
         
             <div class="section__first-text">
                 <p class="first-text__title">Main Site Title</p>
@@ -56,7 +57,7 @@
                     
                 </div>
         </section>
-        <section class="section container section__second">
+        <section id="" class="section container section__second">
             <div class="section__second-text">
                 <p class="second-text__title">At least somewhere you can feel new year atmosphere</p>
                 <p class="second-text__subtitle">Choose your present:</p>
@@ -74,7 +75,7 @@
                 </div>
             </div>
         </section>
-        <section class="section container section__last">
+        <section id="" class="section container section__last">
             <div class="section__last-box">
                 <p class="last-box__title">Write us <br> 
                     for real presents</p>
@@ -113,8 +114,9 @@
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/jquery.pagepiling.min.js"></script>
-    <script src="./index.js"></script>
-    <script>
+    <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript" src="./js//fullpage.js"></script>
+    <script type="text/javascript">
     function burgerMenu(selector) {
         let menu = $(selector);
         let button = menu.find('.burger-menu_button', '.burger-menu_lines');
@@ -142,41 +144,69 @@
 
         burgerMenu('.nav__burger-menu');
     </script>
-    <script>
-        if (matchMedia('only screen and (min-width: 1000px)').matches) {
-        $(document).ready(function() {
-            
-        if(window.screen.width>=1024){
-            $('#pagepiling').pagepiling({
-	    menu: null,
-        direction: 'vertical',
-        verticalCentered: true,
-        sectionsColor: [],
-        anchors: [],
-        scrollingSpeed: 700,
-        easing: 'swing',
-        loopBottom: false,
-        loopTop: false,
-        css3: true,
-        navigation: {
-            'textColor': '#000',
-            'bulletsColor': '#000',
-            'position': 'right',
-            'tooltips': ['section1', 'section2', 'section3', 'section4']
-        },
-       	normalScrollElements: null,
-        normalScrollElementTouchThreshold: 5,
-        touchSensitivity: 5,
-        keyboardScrolling: true,
-        sectionSelector: '.section',
-        animateAnchor: false,
+    <script type="text/javascript">
+var myFullpage = new fullpage("#fullpage", {
+  css3: true,
+  scrollingSpeed: 1000,
+  autoScrolling: true,
+  responsiveWidth: 900,
+  responsiveWidtdh: 800,
+  fitToSection: true,
+  fitToSectionDelay: 1000,
+  scrollBar: false,
+  easing: "easeInOutCubic",
+  easingcss3: "ease",
+  loopBottom: false,
+  loopTop: false,
+  loopHorizontal: true,
+  continuousVertical: false,
+  continuousHorizontal: false,
+  scrollHorizontally: false,
+  interlockedSlides: false,
+  dragAndMove: false,
+  offsetSections: false,
+  resetSliders: false,
+  fadingEffect: false,
+  normalScrollElements: "#element1, .element2",
+  scrollOverflow: false,
+  scrollOverflowReset: false,
+  scrollOverflowOptions: null,
+  touchSensitivity: 15,
+  bigSectionsDestination: null,
 
-    
-	});
-}
+  //Accessibility
+  keyboardScrolling: true,
+  animateAnchor: true,
+  recordHistory: true,
 
+  //Custom selectors
+  sectionSelector: ".section",
+  slideSelector: ".slide",
+
+  lazyLoading: true,
+
+  afterRender: function () {
+    const mq = window.matchMedia("(min-width: 960px)");
+
+    if (mq.matches) {
+      fullpage_api.setAllowScrolling(true);
+    } else {
+    //   fullpage_api.autoScrolling(false);
+      fullpage_api.setAllowScrolling(false);
+    }
+  },
+  afterSlideLoad : function () {
+    const mq = window.matchMedia("(min-width: 960px)");
+
+    if (mq.matches) {
+      fullpage_api.setAllowScrolling(true);
+    } else {
+      fullpage_api.autoScrolling(false);
+      fullpage_api.setAllowScrolling(false);
+    }
+  },
 });
-}
+
     </script>
 </body>
 </html>
