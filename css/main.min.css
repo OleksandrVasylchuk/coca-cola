@@ -19,12 +19,6 @@ body {
   }
 }
 
-.fp-responsive .fp-section,
-.fp-responsive .fp-slide,
-.fp-responsive .fp-tableCell {
-  height: auto !important;
-}
-
 a {
   display: block;
   text-decoration: none;
@@ -412,7 +406,6 @@ nav {
     display: flex;
     padding: 0;
     padding-top: 180px;
-    padding-top: 131px;
     min-width: 1440px;
     height: 100vh;
     color: var(--primary-white-color);
