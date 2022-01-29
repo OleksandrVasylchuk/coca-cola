@@ -47,8 +47,8 @@
                 <button class="first-text__button">Call to action</button>
             </div>
             
-                <div class="section__first-img">
-                    <div id="cloud" class="section__first-cloud">
+                <div class="section__first-img ">
+                    <div id="cloud" class="section__first-cloud active">
                         <p class="first-cloud__text">How how how !!! <br>
                             Like it? <br>
                             Scroll down for more !</p>
@@ -116,7 +116,7 @@
     <script type="text/javascript" src="./js/jquery.pagepiling.min.js"></script>
     <script type="text/javascript" src="./index.js"></script>
     <script type="text/javascript" src="./js//fullpage.js"></script>
-    <script type="text/javascript">
+    <script>
     function burgerMenu(selector) {
         let menu = $(selector);
         let button = menu.find('.burger-menu_button', '.burger-menu_lines');
@@ -196,7 +196,7 @@ var myFullpage = new fullpage("#fullpage", {
     }
   },
   afterSlideLoad : function () {
-    const mq = window.matchMedia("(min-width: 960px)");
+    const mq = window.matchMedia("(min-width: 1024px)");
 
     if (mq.matches) {
       fullpage_api.setAllowScrolling(true);

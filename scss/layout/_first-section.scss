@@ -3,7 +3,7 @@
   min-width: 450px;
   height: 716px;
   color: var(--primary-white-color);
-  background-image: url(../../img/Snow.webp);
+  background-image: url(./../img/Snow.webp);
   background-color: #141429;
 }
 .first-text__title {
@@ -43,7 +43,7 @@
   margin-left: -27px;
   height: 316px;
   width: 450px;
-  background-image: url(../../img/dedcoca-mob.webp);
+  background-image: url(./../img/dedcoca-mob.webp);
 }
 
 @media screen and (min-width: 1440px) {
@@ -56,7 +56,7 @@
     min-width: 1440px;
     height: 100vh;
     color: var(--primary-white-color);
-    background-image: url(../../img/Snow.webp);
+    background-image: url(./../img/Snow.webp);
     //   transform: rotate(90.51deg);
     .pp-tableCell {
       display: flex;
@@ -73,7 +73,7 @@
     margin-left: -27px;
     width: 883px;
     height: 574px;
-    background-image: url(../../img/dedcoca.webp);
+    background-image: url(./../img/dedcoca.webp);
   }
 
   .first-text__title {

@@ -293,6 +293,13 @@ nav {
   transform: rotate(179.88deg);
 }
 
+.burger-menu_nav::-webkit-scrollbar {
+  display: none;
+  overflow-y: hidden;
+  /* Hide vertical scrollbar */
+  overflow-x: hidden;
+}
+
 .burger-menu_active .burger-menu_nav {
   position: fixed;
   width: 1520px;
@@ -301,6 +308,13 @@ nav {
   -moz-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
+}
+
+.burger-menu_active .burger-menu_nav::-webkit-scrollbar {
+  display: none;
+  overflow-y: hidden;
+  /* Hide vertical scrollbar */
+  overflow-x: hidden;
 }
 
 .burger-menu_link {
@@ -335,6 +349,10 @@ nav {
     top: 0;
     right: 0;
   }
+  .burger-menu_active .burger-menu_nav {
+    width: 1580px;
+    height: 1580px;
+  }
 }
 
 .section__first {
@@ -342,7 +360,7 @@ nav {
   min-width: 450px;
   height: 716px;
   color: var(--primary-white-color);
-  background-image: url(../../img/Snow.webp);
+  background-image: url(./../img/Snow.webp);
   background-color: #141429;
 }
 
@@ -386,7 +404,7 @@ nav {
   margin-left: -27px;
   height: 316px;
   width: 450px;
-  background-image: url(../../img/dedcoca-mob.webp);
+  background-image: url(./../img/dedcoca-mob.webp);
 }
 
 @media screen and (min-width: 1440px) {
@@ -398,7 +416,7 @@ nav {
     min-width: 1440px;
     height: 100vh;
     color: var(--primary-white-color);
-    background-image: url(../../img/Snow.webp);
+    background-image: url(./../img/Snow.webp);
   }
   .section__first .pp-tableCell {
     display: flex;
@@ -414,7 +432,7 @@ nav {
     margin-left: -27px;
     width: 883px;
     height: 574px;
-    background-image: url(../../img/dedcoca.webp);
+    background-image: url(./../img/dedcoca.webp);
   }
   .first-text__title {
     margin-bottom: 20px;
