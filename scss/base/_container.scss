@@ -4,6 +4,10 @@
   margin: 0 auto;
   max-width: 450px;
 }
+.fp-tableCell {
+  box-sizing: border-box;
+  display: block;
+}
 
 @media screen and (min-width: 1200px) {
   #pagepiling {

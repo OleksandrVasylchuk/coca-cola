@@ -39,68 +39,76 @@
     </header>
     <div id="fullpage">
         <section id="" class="section container section__first">
-            <div class="section__first-star-img">
-                <svg class="star-img svg-1">
-                    <use href="./svg/sprite.svg#icon-Star"></use>
-                </svg>
-                <svg class="star-img svg-2">
-                    <use href="./svg/sprite.svg#icon-Star"></use>
-                </svg>
-                <svg class="star-img svg-3">
-                    <use href="./svg/sprite.svg#icon-Star"></use>
-                </svg>
-                <svg class="star-img svg-4">
-                    <use href="./svg/sprite.svg#icon-Star"></use>
-                </svg>
-                <svg class="star-img svg-5">
-                    <use href="./svg/sprite.svg#icon-Star"></use>
-                </svg>
-                <svg class="star-img svg-6">
-                    <use href="./svg/sprite.svg#icon-Star"></use>
-                </svg>
-                <svg class="star-img svg-7">
-                    <use href="./svg/sprite.svg#icon-Star"></use>
-                </svg>
-                <svg class="star-img svg-8">
-                    <use href="./svg/sprite.svg#icon-Star"></use>
-                </svg>
-                
-                <svg class="star-img svg-9">
-                    <use href="./svg/sprite.svg#icon-Star"></use>
-                </svg>
-                <svg class="star-img svg-10">
-                    <use href="./svg/sprite.svg#icon-Star"></use>
-                </svg>
-                <svg class="star-img svg-11">
-                    <use href="./svg/sprite.svg#icon-Star"></use>
-                </svg>
-                <svg class="star-img svg-12">
-                    <use href="./svg/sprite.svg#icon-Star"></use>
-                </svg>
-            </div>
-            <!-- <div class="section__first-snou-img"></div> -->
-            <div class="section__first-container">
-                <div class="section__first-text">
-                    <p class="first-text__title">Main Site Title</p>
-                    <p class="first-text__subtitle">Lorem ipsum descripsum</p>
-                    <button class="first-text__button">Call to action</button>
+            <div class="section__first_box">
+                <div class="section__first-star-img">
+                    <svg class="star-img svg-1">
+                        <use href="./svg/sprite.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="star-img svg-2">
+                        <use href="./svg/sprite.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="star-img svg-3">
+                        <use href="./svg/sprite.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="star-img svg-4">
+                        <use href="./svg/sprite.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="star-img svg-5">
+                        <use href="./svg/sprite.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="star-img svg-6">
+                        <use href="./svg/sprite.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="star-img svg-7">
+                        <use href="./svg/sprite.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="star-img svg-8">
+                        <use href="./svg/sprite.svg#icon-Star"></use>
+                    </svg>
+                    
+                    <svg class="star-img svg-9">
+                        <use href="./svg/sprite.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="star-img svg-10">
+                        <use href="./svg/sprite.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="star-img svg-11">
+                        <use href="./svg/sprite.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="star-img svg-12">
+                        <use href="./svg/sprite.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="star-img svg-13">
+                        <use href="./svg/sprite.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="star-img svg-14">
+                        <use href="./svg/sprite.svg#icon-Star"></use>
+                    </svg>
                 </div>
-                
-                <div class="section__first-img ">
-                    <div id="cloud" class="section__first-cloud active">
-                        <p class="first-cloud__text">How how how !!! <br>
-                            Like it? <br>
-                            Scroll down for more !</p>
+                <!-- <div class="section__first-snou-img"></div> -->
+                <div class="section__first-container">
+                    <div class="section__first-text">
+                        <p class="first-text__title">Main Site Title</p>
+                        <p class="first-text__subtitle">Lorem ipsum descripsum</p>
+                        <button class="first-text__button">Call to action</button>
                     </div>
+                    
+                    <div class="section__first-img ">
+                        <div id="cloud" class="section__first-cloud active">
+                            <p class="first-cloud__text">How how how !!! <br>
+                                Like it? <br>
+                                Scroll down for more !</p>
+                        </div>
+                    </div>
+                    <div class="section__first-snowflake"></div>
+                    <svg class="section__first-arrow">
+                        <use href="./svg/sprite.svg#icon-Arrow-2"></use>
+                    </svg>
                 </div>
-                <div class="section__first-snowflake"></div>
-                <svg class="section__first-arrow">
-                    <use href="./svg/sprite.svg#icon-Arrow-2"></use>
-                </svg>
             </div>
         </section>
         <section id="" class="section container section__second">
-                <div class="section__second-box">
+                <div class="section__second-container">
                     <p class="second-text__title">At least somewhere you can feel new year atmosphere</p>
                     <p class="second-text__subtitle">Choose your present:</p>
                     <ul class="gallery-hero">
@@ -273,8 +281,8 @@ var myFullpage = new fullpage("#fullpage", {
   css3: true,
   scrollingSpeed: 1000,
   autoScrolling: true,
-//   responsiveWidth: 900,
-//   responsiveWidtdh: 800,
+  responsiveWidth: 960,
+  responsiveWidtdh: 700,
   fitToSection: true,
   fitToSectionDelay: 1000,
   scrollBar: false,
@@ -332,7 +340,14 @@ var myFullpage = new fullpage("#fullpage", {
     });}else{
         // alert(`Координаты: -`);
         fullpage("#fullpage", {
+            // css3: false,
+            // scrollingSpeed: 0,
             autoScrolling: false,
+            // fitToSection: false,
+            // scrollBar: true,
+            // offsetSections: true,
+            // scrollOverflowReset: true,
+            
         });
     }
 

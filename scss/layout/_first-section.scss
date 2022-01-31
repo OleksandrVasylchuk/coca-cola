@@ -1,13 +1,19 @@
 .section__first {
-  padding-top: 131px;
+  box-sizing: border-box;
+  position: relative;
   min-width: 450px;
-  height: 716px;
   color: var(--primary-white-color);
   background-color: #141429;
+  .section__first_box{
+    box-sizing: border-box;
+    padding-top: 221px;
+    height: 806px;
+  }
 }
 .section__first-container {
   position: relative;
   z-index: 2;
+  // padding-top: 131px;
 }
 .first-text__title {
   margin-bottom: 13px;
@@ -54,9 +60,149 @@
 .section__first-arrow {
   display: none;
 }
-.star-img {
-  width: 7.04px;
-  height: 7.04px;
+
+
+
+.section__first-star-img {
+  position: absolute;
+  top: 11px;
+  left: -210px;
+  z-index: 0;
+  width: 935.72px;
+  height: 380.01px;
+  transform: rotate(-90.06deg);
+
+  .star-img {
+    position: absolute;
+    width: 7.04px;
+    height: 7.04px;
+    z-index: 2;
+    display: inline-block;
+    animation: blink 4s linear infinite;
+    fill: rgb(255, 217, 0);
+
+    &.svg-1 {
+      position: absolute;
+      top: 108px;
+    left: 304px;
+    }
+
+    &.svg-2 {
+      position: absolute;
+      top: 212px;
+    left: 461px;
+    }
+    &.svg-3 {
+      position: absolute;
+      top: 158px;
+      left: 481px;
+    }
+    &.svg-4 {
+      position: absolute;
+      top: 247px;
+    left: 256px;
+    }
+    &.svg-5 {
+      position: absolute;
+      top: 92px;
+    left: 199px;
+    }
+    &.svg-6 {
+      position: absolute;
+      top: 339px;
+    left: 244px;
+
+    }
+    &.svg-7 {
+      position: absolute;
+      top: 299px;
+    right: 759px;
+    }
+    &.svg-8 {
+      position: absolute;
+      top: 200px;
+    left: 200px;
+    }
+    &.svg-9 {
+      position: absolute;
+      top: 321px;
+    left: 420px;
+    }
+    &.svg-10 {
+      position: absolute;
+      top: 18px;
+    left: 192px;
+    }
+    &.svg-11 {
+      position: absolute;
+      top: 314px;
+    left: 58px;
+    }
+    &.svg-12 {
+      position: absolute;
+      top: 310px;
+    left: 317px;
+    }
+    &.svg-13 {
+      position: absolute;
+      top: 129px;
+    left: 264px;
+    }
+    &.svg-14 {
+      position: absolute;
+      top: 37px;
+      left: 277px
+    }
+  }
+}
+
+.star-img:nth-child(1) {
+  animation-delay: 1s;
+}
+.star-img:nth-child(1) {
+  animation-delay: 1s;
+}
+.star-img:nth-child(1) {
+  animation-delay: 1s;
+}
+.star-img:nth-child(2) {
+  animation-delay: 2s;
+}
+.star-img:nth-child(2) {
+  animation-delay: 2s;
+}
+.star-img:nth-child(2) {
+  animation-delay: 2s;
+}
+.star-img:nth-child(3) {
+  animation-delay: 3s;
+}
+.star-img:nth-child(3) {
+  animation-delay: 3s;
+}
+.star-img:nth-child(3) {
+  animation-delay: 3s;
+}
+.star-img:nth-child(4) {
+  animation-delay: 4s;
+}
+.star-img:nth-child(4) {
+  animation-delay: 4s;
+}
+.star-img:nth-child(4) {
+  animation-delay: 4s;
+}
+
+@keyframes blink {
+  0%,
+  20% {
+    fill: rgba(255, 217, 0, 0.5);
+    transform: scale(1);
+  }
+  10% {
+    fill: rgba(252, 214, 2, 1);
+    transform: scale(1.5);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -78,6 +224,14 @@
       bottom: 0;
     }
   }
+  // .section__first-snou-img {
+  //   position: absolute;
+  //   top: 94px;
+  //   left: -66px;
+  //   width: 1330px;
+  //   height: 624px;
+  //   background-image: url(../../img/Snow.webp);
+  // }
 
   .section__first-star-img {
     position: absolute;
@@ -85,22 +239,12 @@
     left: 78px;
     width: 1330px;
     height: 624px;
-    background-image: url(./../img/Stars.webp);
+    transform: rotate(0deg);
+    background-image: url(../../img/Stars.webp);
     .star-img {
       position: absolute;
       width: 15px;
       height: 15px;
-      // animation-name: blinker;
-      // animation-iteration-count: infinite;
-      // animation-timing-function: cubic-bezier(1, 0, 0, 1);
-      // animation-duration: 3s;
-      // -webkit-animation-name: blinker;
-      // -webkit-animation-iteration-count: infinite;
-      // -webkit-animation-timing-function: cubic-bezier(1, 0, 0, 1);
-      // -webkit-animation-duration: 2s;
-      display: inline-block;
-      animation: blink 4s linear infinite;
-      fill: rgb(255, 217, 0);
 
       &.svg-1 {
         position: absolute;
@@ -162,6 +306,16 @@
         position: absolute;
         top: 505px;
         left: 383px;
+      }
+      &.svg-12 {
+        position: absolute;
+        top: 164px;
+    left: 17px;
+      }
+      &.svg-14 {
+        position: absolute;
+        top: -2px;
+    left: 298px;
       }
     }
   }
@@ -271,14 +425,7 @@
     }
   }
 
-  // .section__first-snou-img {
-  //   position: absolute;
-  //   top: 94px;
-  //   left: -66px;
-  //   width: 1330px;
-  //   height: 624px;
-  //   background-image: url(../../img/Snow.webp);
-  // }
+  
   .section__first-text {
     position: relative;
     z-index: 3;
@@ -396,7 +543,7 @@
     height: 500px;
     transform: rotate(1deg);
     animation-name: spin;
-    animation-duration: 3000ms;
+    animation-duration: 15000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }

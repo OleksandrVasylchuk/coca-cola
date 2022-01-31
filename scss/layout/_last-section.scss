@@ -1,11 +1,17 @@
 .section__last {
-  padding-top: 133px;
-  height: 789px;
+  box-sizing: border-box;
   background-image: url(./../img/merry-christmas-mob.jpg);
+  background-size: cover;
+  .fp-tableCell{
+    align-items: start;
+  }
 }
 .section__last-box {
   position: relative;
   z-index: 2;
+  padding-bottom: 75px;
+  padding-top: 133px;
+  height: 789px;
 }
 .last-box__title {
   margin-bottom: 24px;
@@ -351,6 +357,7 @@ input[type="checkbox"]:checked + label > span:before {
 
   .section__last-box {
     width: 480px;
+    padding: 0;
     margin-left: 22px;
     margin-top: 181px;
     margin-bottom: 161px;
