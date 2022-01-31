@@ -222,12 +222,12 @@
     height: 149.78px;
   }
   .section__second-picture {
-    .section__second-circle:first-child {
+    .section__second-circle {
       .second-circle__img {
         width: 69.65px;
         height: 121.33px;
       }
-      &.white-color:last-child {
+      &.white-color {
         .second-circle__img {
           width: 95.11px;
           height: 100.36px;
@@ -252,10 +252,21 @@
     border: 3px solid #ffffff;
     box-sizing: border-box;
     border-radius: 20px;
+    div.center{
+      display: flex;
+      align-items: center;
+    }
   }
   .second-box__img {
     width: 148.06px;
     height: 256.68px;
+    &.center{
+      height: 165px;
+    }
+    &.last{
+      height: 200px;
+      margin-right: -28px;
+    }
   }
   .second-box__title {
     text-align: start;
@@ -314,6 +325,8 @@
       bottom: 0;
       cursor: pointer;
       opacity: 0;
+      width: 150px;
+      height: 150px;
     }
 
     .item-hugger__title {
