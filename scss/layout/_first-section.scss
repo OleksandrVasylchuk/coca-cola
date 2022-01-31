@@ -3,8 +3,11 @@
   min-width: 450px;
   height: 716px;
   color: var(--primary-white-color);
-  background-image: url(./../img/Snow.webp);
   background-color: #141429;
+}
+.section__first-container {
+  position: relative;
+  z-index: 2;
 }
 .first-text__title {
   margin-bottom: 13px;
@@ -45,28 +48,244 @@
   width: 450px;
   background-image: url(./../img/dedcoca-mob.webp);
 }
+.section__first-snowflake {
+  display: none;
+}
+.section__first-arrow {
+  display: none;
+}
+.star-img {
+  width: 7.04px;
+  height: 7.04px;
+}
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .section__first {
+    position: relative;
+    box-sizing: border-box;
     display: flex;
     padding: 0;
-
-    padding-top: 180px;
-    // padding-top: 131px;
     min-width: 1440px;
     height: 100vh;
     color: var(--primary-white-color);
-    background-image: url(./../img/Snow.webp);
-    //   transform: rotate(90.51deg);
-    .pp-tableCell {
+    .fp-tableCell {
       display: flex;
       align-items: end;
     }
+    .section__first-container {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+    }
   }
+
+  .section__first-star-img {
+    position: absolute;
+    top: 29px;
+    left: 78px;
+    width: 1330px;
+    height: 624px;
+    background-image: url(./../img/Stars.webp);
+    .star-img {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      // animation-name: blinker;
+      // animation-iteration-count: infinite;
+      // animation-timing-function: cubic-bezier(1, 0, 0, 1);
+      // animation-duration: 3s;
+      // -webkit-animation-name: blinker;
+      // -webkit-animation-iteration-count: infinite;
+      // -webkit-animation-timing-function: cubic-bezier(1, 0, 0, 1);
+      // -webkit-animation-duration: 2s;
+      display: inline-block;
+      animation: blink 4s linear infinite;
+      fill: rgb(255, 217, 0);
+
+      &.svg-1 {
+        position: absolute;
+        top: 114px;
+        left: 311px;
+      }
+
+      &.svg-2 {
+        position: absolute;
+        top: 171px;
+        left: 416px;
+      }
+      &.svg-3 {
+        position: absolute;
+        top: 140px;
+        left: 481px;
+      }
+      &.svg-4 {
+        position: absolute;
+        top: 221px;
+        left: 749px;
+      }
+      &.svg-5 {
+        position: absolute;
+        top: 279px;
+        left: 40px;
+      }
+      &.svg-6 {
+        position: absolute;
+        top: 291px;
+        left: 527px;
+      }
+      &.svg-7 {
+        position: absolute;
+        top: 386px;
+        right: -3px;
+      }
+      &.svg-8 {
+        position: absolute;
+        top: 315px;
+        left: 231px;
+      }
+      &.svg-9 {
+        position: absolute;
+        top: 360px;
+        left: 403px;
+      }
+      &.svg-10 {
+        position: absolute;
+        top: 149px;
+        left: 1105px;
+      }
+      &.svg-11 {
+        position: absolute;
+        top: 476px;
+        left: 663px;
+      }
+      &.svg-12 {
+        position: absolute;
+        top: 505px;
+        left: 383px;
+      }
+    }
+  }
+
+  .star-img:nth-child(1) {
+    animation-delay: 1s;
+  }
+  .star-img:nth-child(1) {
+    animation-delay: 1s;
+  }
+  .star-img:nth-child(1) {
+    animation-delay: 1s;
+  }
+  .star-img:nth-child(2) {
+    animation-delay: 2s;
+  }
+  .star-img:nth-child(2) {
+    animation-delay: 2s;
+  }
+  .star-img:nth-child(2) {
+    animation-delay: 2s;
+  }
+  .star-img:nth-child(3) {
+    animation-delay: 3s;
+  }
+  .star-img:nth-child(3) {
+    animation-delay: 3s;
+  }
+  .star-img:nth-child(3) {
+    animation-delay: 3s;
+  }
+  .star-img:nth-child(4) {
+    animation-delay: 4s;
+  }
+  .star-img:nth-child(4) {
+    animation-delay: 4s;
+  }
+  .star-img:nth-child(4) {
+    animation-delay: 4s;
+  }
+
+  @keyframes blink {
+    0%,
+    20% {
+      fill: rgba(255, 217, 0, 0.5);
+      transform: scale(1);
+    }
+    10% {
+      fill: rgba(252, 214, 2, 1);
+      transform: scale(1.5);
+    }
+  }
+
+  .section__first-arrow {
+    display: block;
+    position: absolute;
+    bottom: 51px;
+    left: 160px;
+    width: 34px;
+    height: 34px;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-animation-delay: 5s;
+    -moz-animation-delay: 5s;
+    -o-animation-delay: 5s;
+    animation-delay: 1s;
+    transition-timing-function: ease-in;
+    transition-duration: 10s;
+    animation-iteration-count: 3;
+  }
+  @keyframes bounce {
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(1.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+
+    40% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, 10px, 0);
+      transform: translate3d(0, 10px, 0);
+    }
+
+    70% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, 12px, 0);
+      transform: translate3d(0, 12px, 0);
+    }
+
+    90% {
+      -webkit-transform: translate3d(0, 5px, 0);
+      transform: translate3d(0, 5px, 0);
+    }
+  }
+
+  // .section__first-snou-img {
+  //   position: absolute;
+  //   top: 94px;
+  //   left: -66px;
+  //   width: 1330px;
+  //   height: 624px;
+  //   background-image: url(../../img/Snow.webp);
+  // }
   .section__first-text {
+    position: relative;
+    z-index: 3;
     margin-left: 148px;
     display: block;
-    height: 574px;
+    // height: 574px;
+    margin-top: 77px;
   }
   .section__first-img {
     position: relative;
@@ -152,30 +371,42 @@
       animation-fill-mode: forwards;
     }
   }
-}
 
-@keyframes active {
-  0% {
-    opacity: 0.25;
-    -webkit-transform: scale(0.25, 0.25);
-    transform: scale(0.25, 0.25);
+  @keyframes active {
+    0% {
+      opacity: 0.25;
+      -webkit-transform: scale(0.25, 0.25);
+      transform: scale(0.25, 0.25);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1);
+    }
   }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
+
+  .section__first-snowflake {
+    display: block;
+    background-image: url(./../img/snowflake.webp);
+    position: absolute;
+    bottom: -18px;
+    left: -227px;
+    z-index: 1;
+    width: 500px;
+    height: 500px;
+    transform: rotate(1deg);
+    animation-name: spin;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
 }
-// .first-cloud__triangle {
-//   position: absolute;
-//   top: 60px;
-//   right: 0px;
-//   width: 0;
-//   height: 0;
-//   border-top: 20px solid transparent;
-//   border-left: 65px solid #ffffff;
-//   border-bottom: 20px solid transparent;
-//   box-shadow: 4px 5px 15px rgba(255, 255, 255, 0.25);
-//   transform: rotate(58.28deg);
-//   filter: blur(4px);
-// }

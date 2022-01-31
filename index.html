@@ -9,19 +9,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Risque&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/jquery.pagepiling.min.css" />
-    <link rel="stylesheet" type="text/css" href="./css/fullpage.css" />
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/fullpage.css" />
     <link rel="stylesheet" href="./css/main.min.css">
 <body class="fp-responsive">
     <header #header>
         <nav class="nav">
-            <img src="./img/Coca-Cola_logo_white 1.webp" alt="logo" class="logo">
+            <a href="#"><img src="./img/Coca-Cola_logo_white 1.webp" alt="logo" class="logo"></a>
             <ul class="nav__item">
-                <li class="nav__list"><a href="#">Main</a></li>
-                <li class="nav__list"><a href="#">About</a></li>
-                <li class="nav__list"><a href="#">Products</a></li>
-                <li class="nav__list"><a href="#">Contacts</a></li>
+                <li class="nav__list"><a href="#"class="btn-flip" data-back="Main" data-front="Main"></a></li>
+                <li class="nav__list"><a  href="#" class="btn-flip" data-back="About" data-front="About"></a></li>
+                <li class="nav__list"><a href="#" class="btn-flip" data-back="Products" data-front="Products"></a></li>
+                <li class="nav__list"><a href="#" class="btn-flip" data-back="Contacts" data-front="Contacts"></a></li>
             </ul>
             <div class="nav__burger-menu">
                 <div class="burger-menu_button">
@@ -40,69 +39,190 @@
     </header>
     <div id="fullpage">
         <section id="" class="section container section__first">
-        
-            <div class="section__first-text">
-                <p class="first-text__title">Main Site Title</p>
-                <p class="first-text__subtitle">Lorem ipsum descripsum</p>
-                <button class="first-text__button">Call to action</button>
+            <div class="section__first-star-img">
+                <svg class="star-img svg-1">
+                    <use href="./svg/sprite.svg#icon-Star"></use>
+                </svg>
+                <svg class="star-img svg-2">
+                    <use href="./svg/sprite.svg#icon-Star"></use>
+                </svg>
+                <svg class="star-img svg-3">
+                    <use href="./svg/sprite.svg#icon-Star"></use>
+                </svg>
+                <svg class="star-img svg-4">
+                    <use href="./svg/sprite.svg#icon-Star"></use>
+                </svg>
+                <svg class="star-img svg-5">
+                    <use href="./svg/sprite.svg#icon-Star"></use>
+                </svg>
+                <svg class="star-img svg-6">
+                    <use href="./svg/sprite.svg#icon-Star"></use>
+                </svg>
+                <svg class="star-img svg-7">
+                    <use href="./svg/sprite.svg#icon-Star"></use>
+                </svg>
+                <svg class="star-img svg-8">
+                    <use href="./svg/sprite.svg#icon-Star"></use>
+                </svg>
+                
+                <svg class="star-img svg-9">
+                    <use href="./svg/sprite.svg#icon-Star"></use>
+                </svg>
+                <svg class="star-img svg-10">
+                    <use href="./svg/sprite.svg#icon-Star"></use>
+                </svg>
+                <svg class="star-img svg-11">
+                    <use href="./svg/sprite.svg#icon-Star"></use>
+                </svg>
+                <svg class="star-img svg-12">
+                    <use href="./svg/sprite.svg#icon-Star"></use>
+                </svg>
             </div>
-            
+            <!-- <div class="section__first-snou-img"></div> -->
+            <div class="section__first-container">
+                <div class="section__first-text">
+                    <p class="first-text__title">Main Site Title</p>
+                    <p class="first-text__subtitle">Lorem ipsum descripsum</p>
+                    <button class="first-text__button">Call to action</button>
+                </div>
+                
                 <div class="section__first-img ">
                     <div id="cloud" class="section__first-cloud active">
                         <p class="first-cloud__text">How how how !!! <br>
                             Like it? <br>
                             Scroll down for more !</p>
-                            <!-- <div class="first-cloud__triangle"></div> -->
                     </div>
-                    
                 </div>
+                <div class="section__first-snowflake"></div>
+                <svg class="section__first-arrow">
+                    <use href="./svg/sprite.svg#icon-Arrow-2"></use>
+                </svg>
+            </div>
         </section>
         <section id="" class="section container section__second">
-            <div class="section__second-text">
-                <p class="second-text__title">At least somewhere you can feel new year atmosphere</p>
-                <p class="second-text__subtitle">Choose your present:</p>
-                <div class="section__second-picture">
-                    <div class="section__second-circle"><img src="./img/new-year-sock.webp" alt="new year sock" class="second-circle__img"></div>
-                    <div class="section__second-circle white-color center"><img src="./img/caps.webp" alt="caps" class="second-circle__img"></div>
-                    <div class="section__second-circle white-color"><img src="./img/new-year-bag.webp" alt="new year bag" class="second-circle__img"></div>
+                <div class="section__second-box">
+                    <p class="second-text__title">At least somewhere you can feel new year atmosphere</p>
+                    <p class="second-text__subtitle">Choose your present:</p>
+                    <ul class="gallery-hero">
+                        <li class="gallery__item">
+                            
+                            <input type="radio" name="select" id="sock" checked>
+                            <ul class="item-hugger relative section__second-picture">
+                                <div class="section__second-circle"><img src="./img/new-year-sock.webp" alt="new year sock" class="second-circle__img"></div>
+                                <label for="sock"></label>
+                            </ul>
+                            
+                            <div class="content relative">
+                                <div class="section__second-box ">
+                                    <div><img class="second-box__img" src="./img/new-year-sock.webp" alt="new year sock"></div>
+                                    <div>
+                                        <p class="second-box__title">Best sock ever</p>
+                                        <p class="second-box__subtitle">Reuglar sock have no present inside <br> Lorem Ipsum is simply dumm y text of the printing and types etting industry. Lorem </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="gallery__item">
+                            <input type="radio" name="select" id="caps">
+                            <ul  class=" item-hugger relative section__second-picture center">
+                                <div class="section__second-circle white-color center"><img src="./img/caps.webp" alt="caps" class="second-circle__img"></div>
+                                <label for="caps"></label>
+                            </ul>
+                        
+                            <div class="content relative">
+                                <div class="section__second-box">
+                                    <div><img class="second-box__img" src="./img/caps.webp" alt="caps"></div>
+                                    <div>
+                                        <p class="second-box__title">Best caps ever</p>
+                                        <p class="second-box__subtitle">Reuglar caps have no present inside <br> Lorem Ipsum is simply dumm y text of the printing and types etting industry. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="gallery__item">
+                            <input type="radio" name="select" id="bag">
+                            <ul class="item-hugger relative section__second-picture last">
+                                <div class="section__second-circle white-color"><img src="./img/new-year-bag.webp" alt="new year bag" class="second-circle__img"></div>
+                                <label for="bag"></label>
+                            </ul>
+
+                            <div class="content relative">
+                                <div class="section__second-box ">
+                                    <div><img class="second-box__img" src="./img/new-year-bag.webp" alt="new year bag"></div>
+                                    <div>
+                                        <p class="second-box__title">Best bag ever</p>
+                                        <p class="second-box__subtitle">Reuglar bag have  <br> Lorem Ipsum is simply dumm y text of the printing and types etting industry. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
                 </div>
-            </div>
-            <div class="section__second-box">
-                <img src="./img/new-year-sock.webp" alt="new year sock" class="second-box__img">
-                <div>
-                    <p class="second-box__title">Best sock ever</p>
-                    <p class="second-box__subtitle">Reuglar sock have no present inside <br> Lorem Ipsum is simply dumm y text of the printing and types etting industry. Lorem </p>
+                <div class="snoW_animation">
+                    <div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div>
                 </div>
-            </div>
         </section>
         <section id="" class="section container section__last">
             <div class="section__last-box">
                 <p class="last-box__title">Write us <br> 
                     for real presents</p>
                 <form action=""  method="post">
+                   <div class="forma">
                     <input class="last-box__input" type="text" name="name" id="name" placeholder="Name">
                     <input class="last-box__input" type="tel" name="phone" id="phone"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone" required>
-                    <select class="last-box__input select" id="Gender" name="Gender" required>
-                        <option class="last-box__input" value="Gender">Gender</option>
-                        <option class="last-box__input" value="Boy">Boy</option>
-                        <option class="last-box__input" value="Girl">Girl</option>
-                    </select>
+                    <fieldset class="last-box__input fieldset">
+                        <!-- <legend class="fieldset__legend">Action</legend> -->
+
+                        <div class="select-box">
+                            <div class="select-box__current" tabindex="1">
+                              <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="0" value="1" name="1" checked="checked"/>
+                                <p class="select-box__input-text">Gender</p>
+                              </div>
+                              <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="1" value="2" name="1"/>
+                                <p class="select-box__input-text">Boy</p>
+                              </div>
+                              <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="2" value="3" name="1"/>
+                                <p class="select-box__input-text">Girl</p>
+                              </div>
+                              
+                                <svg class="select-box__icon" alt="Arrow Icon" aria-hidden="true">
+                                    <use xlink:href="./svg/sprite.svg#icon-polygon"></use>
+                                </svg>
+                            </div>
+
+                            <ul class="select-box__list">
+                                <li>
+                                  <label class="select-box__option" for="1" aria-hidden="aria-hidden">Boy</label>
+                                </li>
+                                <li>
+                                  <label class="select-box__option" for="2" aria-hidden="aria-hidden">Girl</label>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </fieldset>
                     <input class="last-box__input" type="email" id="email"multiple size="30" placeholder="Email" required>
+                   </div>
                     <textarea class="last-box__input coment" name="comments" placeholder="Your witsh"></textarea>
                     <p class="last-box__cheskbox">
-                        <input id='one' type='checkbox' />
+                        <input class="option-input checkbox" id='one' type='checkbox' />
                         <label for='one'>
                             <span></span>
                             Whant Coca-cola with present ?
                         </label>
-                        <label>
-                            <span></span>
-                            <input type="checkbox" class="option-input checkbox" checked />
-                            Whant Coca-cola with present ?
-                          </label>
                 </form>
             </div>
+            <div class="snoW_animation">
+                <div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div>
+            </div>
         </section>
+        <div class="snoW_animation">
+            <div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div><div class="snowflake"></div>
+        </div>
         <div class="preloader">
             <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <path fill="currentColor"
@@ -114,7 +234,7 @@
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/jquery.pagepiling.min.js"></script>
-    <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
     <script type="text/javascript" src="./js//fullpage.js"></script>
     <script>
     function burgerMenu(selector) {
@@ -148,7 +268,7 @@
 const mq = window.matchMedia("(min-width: 960px)");
 
 if (mq.matches) {
-    alert(`Координаты: +`);
+    // alert(`Координаты: +`);
 var myFullpage = new fullpage("#fullpage", {
   css3: true,
   scrollingSpeed: 1000,
@@ -210,7 +330,7 @@ var myFullpage = new fullpage("#fullpage", {
 //   },
   
     });}else{
-        alert(`Координаты: -`);
+        // alert(`Координаты: -`);
         fullpage("#fullpage", {
             autoScrolling: false,
         });
