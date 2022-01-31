@@ -4,7 +4,7 @@
   min-width: 450px;
   color: var(--primary-white-color);
   background-color: #141429;
-  .section__first_box{
+  .section__first_box {
     box-sizing: border-box;
     padding-top: 221px;
     height: 806px;
@@ -61,8 +61,6 @@
   display: none;
 }
 
-
-
 .section__first-star-img {
   position: absolute;
   top: 11px;
@@ -84,13 +82,13 @@
     &.svg-1 {
       position: absolute;
       top: 108px;
-    left: 304px;
+      left: 304px;
     }
 
     &.svg-2 {
       position: absolute;
       top: 212px;
-    left: 461px;
+      left: 461px;
     }
     &.svg-3 {
       position: absolute;
@@ -100,58 +98,57 @@
     &.svg-4 {
       position: absolute;
       top: 247px;
-    left: 256px;
+      left: 256px;
     }
     &.svg-5 {
       position: absolute;
       top: 92px;
-    left: 199px;
+      left: 199px;
     }
     &.svg-6 {
       position: absolute;
       top: 339px;
-    left: 244px;
-
+      left: 244px;
     }
     &.svg-7 {
       position: absolute;
       top: 299px;
-    right: 759px;
+      right: 759px;
     }
     &.svg-8 {
       position: absolute;
       top: 200px;
-    left: 200px;
+      left: 200px;
     }
     &.svg-9 {
       position: absolute;
       top: 321px;
-    left: 420px;
+      left: 420px;
     }
     &.svg-10 {
       position: absolute;
       top: 18px;
-    left: 192px;
+      left: 192px;
     }
     &.svg-11 {
       position: absolute;
       top: 314px;
-    left: 58px;
+      left: 58px;
     }
     &.svg-12 {
       position: absolute;
       top: 310px;
-    left: 317px;
+      left: 317px;
     }
     &.svg-13 {
       position: absolute;
       top: 129px;
-    left: 264px;
+      left: 264px;
     }
     &.svg-14 {
       position: absolute;
       top: 37px;
-      left: 277px
+      left: 277px;
     }
   }
 }
@@ -310,12 +307,12 @@
       &.svg-12 {
         position: absolute;
         top: 164px;
-    left: 17px;
+        left: 17px;
       }
       &.svg-14 {
         position: absolute;
         top: -2px;
-    left: 298px;
+        left: 298px;
       }
     }
   }
@@ -425,7 +422,6 @@
     }
   }
 
-  
   .section__first-text {
     position: relative;
     z-index: 3;

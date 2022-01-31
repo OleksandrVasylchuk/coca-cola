@@ -2,7 +2,7 @@
   box-sizing: border-box;
   background-image: url(./../img/merry-christmas-mob.jpg);
   background-size: cover;
-  .fp-tableCell{
+  .fp-tableCell {
     align-items: start;
   }
 }
@@ -113,8 +113,9 @@
 
 .select-box__current:focus + .select-box__list {
   opacity: 1;
+  z-index: 1;
   position: static;
-  z-index: 0;
+  height: 148px;
   -webkit-animation-name: none;
   animation-name: none;
 }
@@ -171,12 +172,15 @@
 }
 
 .select-box__list {
+  position: static;
   padding-top: 50px;
   padding-bottom: 10px;
   background: #ffffff;
   color: #cecece;
   border-radius: 15px;
   opacity: 0;
+  z-index: -1;
+  height: 0;
   -webkit-animation-name: HideList;
   animation-name: HideList;
   -webkit-animation-duration: 0.5s;
@@ -294,6 +298,7 @@ input[type="checkbox"]:checked + label > ins {
 
 input[type="checkbox"]:checked + label > span {
   border: 2px solid var(--accent-color);
+  background: #ffffff;
   animation: shrink-bounce 200ms cubic-bezier(0.4, 0, 0.23, 1);
 }
 input[type="checkbox"]:checked + label > span:before {
@@ -356,6 +361,8 @@ input[type="checkbox"]:checked + label > span:before {
   }
 
   .section__last-box {
+    position: relative;
+    z-index: 3;
     width: 480px;
     padding: 0;
     margin-left: 22px;

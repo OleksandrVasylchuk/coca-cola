@@ -85,7 +85,6 @@
                         <use href="./svg/sprite.svg#icon-Star"></use>
                     </svg>
                 </div>
-                <!-- <div class="section__first-snou-img"></div> -->
                 <div class="section__first-container">
                     <div class="section__first-text">
                         <p class="first-text__title">Main Site Title</p>
@@ -100,7 +99,7 @@
                                 Scroll down for more !</p>
                         </div>
                     </div>
-                    <div class="section__first-snowflake"></div>
+                    <div class="section__first-snowflake fp-bg"></div>
                     <svg class="section__first-arrow">
                         <use href="./svg/sprite.svg#icon-Arrow-2"></use>
                     </svg>
@@ -273,84 +272,53 @@
         burgerMenu('.nav__burger-menu');
     </script>
     <script type="text/javascript">
-const mq = window.matchMedia("(min-width: 960px)");
+        const mq = window.matchMedia("(min-width: 960px)");
 
-if (mq.matches) {
-    // alert(`Координаты: +`);
-var myFullpage = new fullpage("#fullpage", {
-  css3: true,
-  scrollingSpeed: 1000,
-  autoScrolling: true,
-  responsiveWidth: 960,
-  responsiveWidtdh: 700,
-  fitToSection: true,
-  fitToSectionDelay: 1000,
-  scrollBar: false,
-  easing: "easeInOutCubic",
-  easingcss3: "ease",
-  loopBottom: false,
-  loopTop: false,
-  loopHorizontal: true,
-  continuousVertical: false,
-  continuousHorizontal: false,
-  scrollHorizontally: false,
-  interlockedSlides: false,
-  dragAndMove: false,
-  offsetSections: false,
-  resetSliders: false,
-  fadingEffect: false,
-  normalScrollElements: "#element1, .element2",
-  scrollOverflow: false,
-  scrollOverflowReset: false,
-  scrollOverflowOptions: null,
-  touchSensitivity: 15,
-  bigSectionsDestination: null,
-  setAllowScrolling: false,
-  //Accessibility
-  keyboardScrolling: true,
-  animateAnchor: true,
-  recordHistory: true,
+        if (mq.matches) {
+        var myFullpage = new fullpage("#fullpage", {
+        css3: true,
+        scrollingSpeed: 1000,
+        autoScrolling: true,
+        responsiveWidth: 960,
+        responsiveWidtdh: 700,
+        fitToSection: true,
+        fitToSectionDelay: 1000,
+        scrollBar: false,
+        easing: "easeInOutCubic",
+        easingcss3: "ease",
+        loopBottom: false,
+        loopTop: false,
+        loopHorizontal: true,
+        continuousVertical: false,
+        continuousHorizontal: false,
+        scrollHorizontally: false,
+        interlockedSlides: false,
+        dragAndMove: false,
+        offsetSections: false,
+        resetSliders: false,
+        fadingEffect: false,
+        normalScrollElements: "#element1, .element2",
+        scrollOverflow: false,
+        scrollOverflowReset: false,
+        scrollOverflowOptions: null,
+        touchSensitivity: 15,
+        bigSectionsDestination: null,
+        setAllowScrolling: false,
+        //Accessibility
+        keyboardScrolling: true,
+        animateAnchor: true,
+        recordHistory: true,
 
-  //Custom selectors
-  sectionSelector: ".section",
-  slideSelector: ".slide",
+        //Custom selectors
+        sectionSelector: ".section",
+        slideSelector: ".slide",
+        lazyLoading: true,
 
-  lazyLoading: true,
-
-//   afterRender: function () {
-//     const mq = window.matchMedia("(min-width: 960px)");
-
-//     if (mq.matches) {
-//         alert(`Координаты: +`);
-//         autoScrolling: true,
-//         // fullpage_api.autoScrolling(true);
-//       fullpage_api.setAllowScrolling(true);
-//     } else {
-//         new fullpage("#fullpage", {
-
-//         autoScrolling: false,
-//     });
-//         alert(`Координаты: -`);
-//     //   fullpage_api.autoScrolling(false);
-//     //   autoScrolling: false,
-//       fullpage_api.setAllowScrolling(false);
-//     }
-//   },
-  
-    });}else{
-        // alert(`Координаты: -`);
-        fullpage("#fullpage", {
-            // css3: false,
-            // scrollingSpeed: 0,
-            autoScrolling: false,
-            // fitToSection: false,
-            // scrollBar: true,
-            // offsetSections: true,
-            // scrollOverflowReset: true,
-            
-        });
-    }
-
+        });}else{
+                fullpage("#fullpage", {
+                    autoScrolling: false
+                });
+            }
     </script>
 </body>
 </html>
