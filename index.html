@@ -245,7 +245,7 @@
     <script type="text/javascript" src="./js//fullpage.js"></script>
     <script type="text/javascript">
     function burgerMenu(selector) {
-        let menu = $(selector);
+        let menu = $('#nav__burger-menu');
         let button = menu.find('.burger-menu_button', '.burger-menu_lines');
         let links = menu.find('.burger-menu_link');
         let overlay = menu.find('.burger-menu_overlay');
@@ -269,7 +269,7 @@
         }
     }
 
-        burgerMenu('#nav__burger-menu');
+        burgerMenu();
     </script>
     <script type="text/javascript">
         const mq = window.matchMedia("(min-width: 960px)");
