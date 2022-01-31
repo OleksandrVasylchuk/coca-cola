@@ -22,7 +22,7 @@
                 <li class="nav__list"><a href="#" class="btn-flip" data-back="Products" data-front="Products"></a></li>
                 <li class="nav__list"><a href="#" class="btn-flip" data-back="Contacts" data-front="Contacts"></a></li>
             </ul>
-            <div class="nav__burger-menu">
+            <div id="nav__burger-menu" class="nav__burger-menu">
                 <div class="burger-menu_button">
                     <span class="burger-menu_lines"></span>
                     <div class="burger-menu_nav">
@@ -243,7 +243,7 @@
     <script type="text/javascript" src="./js/jquery.pagepiling.min.js"></script>
     <script type="text/javascript" src="./js/index.js"></script>
     <script type="text/javascript" src="./js//fullpage.js"></script>
-    <script>
+    <script type="text/javascript">
     function burgerMenu(selector) {
         let menu = $(selector);
         let button = menu.find('.burger-menu_button', '.burger-menu_lines');
@@ -269,7 +269,7 @@
         }
     }
 
-        burgerMenu('.nav__burger-menu');
+        burgerMenu('#nav__burger-menu');
     </script>
     <script type="text/javascript">
         const mq = window.matchMedia("(min-width: 960px)");
