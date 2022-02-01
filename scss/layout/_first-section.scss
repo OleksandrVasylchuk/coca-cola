@@ -1,7 +1,7 @@
 .section__first {
   box-sizing: border-box;
   position: relative;
-  min-width: 450px;
+  // min-width: 450px;
   color: var(--primary-white-color);
   background-color: #141429;
   .section__first_box {
@@ -208,7 +208,7 @@
     box-sizing: border-box;
     display: flex;
     padding: 0;
-    min-width: 1440px;
+    // min-width: 1440px;
     height: 100vh;
     color: var(--primary-white-color);
     .fp-tableCell {
@@ -434,8 +434,9 @@
     position: relative;
     margin-left: -27px;
     width: 883px;
+    width: 1192px;
     height: 574px;
-    background-image: url(./../img/dedcoca.webp);
+    background-image: url(./../img/dedcoca-desctop.webp);
   }
 
   .first-text__title {
