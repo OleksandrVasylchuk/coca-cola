@@ -49,10 +49,10 @@
 }
 
 .section__first-img {
-  margin-left: -27px;
+  margin-left: -90px;
   height: 316px;
-  width: 450px;
-  background-image: url(./../img/dedcoca-mob.webp);
+  width: 544px;
+  background-image: url(../../img/dedcoca-mob.webp);
 }
 .section__first-snowflake {
   display: none;
@@ -533,8 +533,9 @@
     display: block;
     background-image: url(./../img/snowflake.webp);
     position: absolute;
-    bottom: -18px;
-    left: -227px;
+    background-size: cover;
+    bottom: -40px;
+    left: -215px;
     z-index: 1;
     width: 500px;
     height: 500px;
