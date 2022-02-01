@@ -120,15 +120,15 @@
   }
 }
 
-.burger-menu_overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 21;
-}
+// .burger-menu_overlay {
+//   display: none;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100vw;
+//   height: 100vh;
+//   z-index: 21;
+// }
 
 @media screen and (min-width: 1200px) {
   .nav__burger-menu {

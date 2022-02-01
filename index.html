@@ -240,37 +240,8 @@
     </div>
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/jquery.pagepiling.min.js"></script>
     <script type="text/javascript" src="./js/index.js"></script>
     <script type="text/javascript" src="./js//fullpage.js"></script>
-    <script type="text/javascript">
-    function burgerMenu(selector) {
-        let menu = $('#nav__burger-menu');
-        let button = menu.find('.burger-menu_button', '.burger-menu_lines');
-        let links = menu.find('.burger-menu_link');
-        let overlay = menu.find('.burger-menu_overlay');
-        
-        button.on('click', (e) => {
-            e.preventDefault();
-            toggleMenu();
-        });
-        
-        links.on('click', () => toggleMenu());
-        overlay.on('click', () => toggleMenu());
-        
-        function toggleMenu(){
-            menu.toggleClass('burger-menu_active');
-            
-            if (menu.hasClass('burger-menu_active')) {
-            $('body').css('overlow', 'hidden');
-            } else {
-            $('body').css('overlow', 'visible');
-            }
-        }
-    }
-
-        burgerMenu();
-    </script>
     <script type="text/javascript">
         const mq = window.matchMedia("(min-width: 960px)");
 
